@@ -11,6 +11,9 @@ defmodule PacketApi.Notifications do
 
   @base "/notifications"
 
+  @doc """
+  Returns a list of the current user’s notifications.
+  """
   @spec list(request, includes) :: {:ok, [map]} | {:error, any}
   def list(%{client: client}, includes \\ []) do
     path = @base
