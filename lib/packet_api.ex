@@ -1,6 +1,7 @@
 defmodule PacketApi do
   @moduledoc """
-  Documentation for PacketApi.
+  Documentation for PacketApi. This module contains mostly "helper" functions --
+  see the endpoint-specific modules for more information.
   """
 
   @type includes :: [String.t() | [String.t()]]
@@ -24,6 +25,9 @@ defmodule PacketApi do
 
   @default_uri "https://api.packet.net/"
 
+  @doc """
+  Build a request map pre-configured with url and auth token header.
+  """
   @spec request(opts) :: request
   def request(opts \\ []) do
     auth_token = Keyword.get(opts, :auth_token)
