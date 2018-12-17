@@ -1,0 +1,217 @@
+{
+  "plans": [
+    {
+      "id": "5aeee4f9-1137-4514-8f3e-a1e103b02966",
+      "slug": "c2.medium.x86",
+      "name": "c2.medium.x86",
+      "description": "Our c2.medium.x86 configuration is an AMD 7401P EPYC server.",
+      "line": "baremetal",
+      "specs": {
+        "cpus": [
+          {
+            "count": 1,
+            "type": "AMD EPYC 7401P 24-Core Processor @ 2.0GHz"
+          }
+        ],
+        "memory": {
+          "total": "64GB"
+        },
+        "drives": [
+          {
+            "count": 2,
+            "size": "120GB",
+            "type": "SSD"
+          },
+          {
+            "count": 2,
+            "size": "480GB",
+            "type": "SSD"
+          }
+        ],
+        "nics": [
+          {
+            "count": 2,
+            "type": "10Gbps"
+          }
+        ],
+        "features": {}
+      },
+      "legacy": true,
+      "deployment_types": [
+        "on_demand",
+        "spot_market"
+      ],
+      "available_in": [
+        {
+          "id": "c9dcbd06-6797-4096-b648-1be16dd5d833",
+          "name": "Dallas, TX",
+          "code": "dfw2",
+          "features": [
+            "baremetal",
+            "storage",
+            "global_ipv4",
+            "backend_transfer",
+            "layer_2"
+          ],
+          "address": {
+            "href": "#273bf240-ca93-4ad8-82fa-1d9768098de1"
+          },
+          "ip_ranges": []
+        },
+        {
+          "id": "2b70eb8f-fa18-47c0-aba7-222a842362fd",
+          "name": "Sunnyvale, CA",
+          "code": "sjc1",
+          "features": [
+            "baremetal",
+            "storage",
+            "layer_2",
+            "global_ipv4",
+            "backend_transfer"
+          ],
+          "address": {
+            "href": "#9dba11a6-0a26-4993-901b-df253713b89e"
+          },
+          "ip_ranges": [
+            "2604:1380:1000::/36",
+            "147.75.200.0/22",
+            "147.75.108.0/22",
+            "147.75.68.0/22",
+            "147.75.88.0/22"
+          ]
+        },
+        {
+          "id": "e1e9c52e-a0bc-4117-b996-0fc94843ea09",
+          "name": "Parsippany, NJ",
+          "code": "ewr1",
+          "features": [
+            "baremetal",
+            "storage",
+            "backend_transfer",
+            "layer_2",
+            "global_ipv4"
+          ],
+          "address": null,
+          "ip_ranges": [
+            "2604:1380::/36",
+            "147.75.192.0/21",
+            "147.75.64.0/22",
+            "147.75.72.0/22",
+            "147.75.76.0/22",
+            "147.75.104.0/22",
+            "147.75.96.0/20"
+          ]
+        },
+        {
+          "id": "8ea03255-89f9-4e62-9d3f-8817db82ceed",
+          "name": "Tokyo, JP",
+          "code": "nrt1",
+          "features": [
+            "baremetal",
+            "layer_2",
+            "storage",
+            "global_ipv4",
+            "backend_transfer"
+          ],
+          "address": {
+            "href": "#7952fcbb-f2a9-44c8-bdf3-52b8f26514a0"
+          },
+          "ip_ranges": [
+            "2604:1380:3000::/36",
+            "147.75.110.0/23",
+            "147.75.92.0/22"
+          ]
+        },
+        {
+          "id": "8e6470b3-b75e-47d1-bb93-45b225750975",
+          "name": "Amsterdam, NL",
+          "code": "ams1",
+          "features": [
+            "baremetal",
+            "storage",
+            "global_ipv4",
+            "backend_transfer",
+            "layer_2"
+          ],
+          "address": {
+            "href": "#0688e909-647e-4b21-bdf2-fc056d993fc5"
+          },
+          "ip_ranges": [
+            "2604:1380:2000::/36",
+            "147.75.204.0/23",
+            "147.75.100.0/22",
+            "147.75.80.0/22",
+            "147.75.32.0/23"
+          ]
+        }
+      ],
+      "class": "c2.medium.x86",
+      "pricing": {
+        "hour": 1
+      }
+    },
+    {
+      "id": "18810cec-1711-4f30-b323-a1001804b10f",
+      "slug": "g2.large.x86",
+      "name": "g2.large.x86",
+      "description": "Our g2.large.x86 configuration is the perfect all purpose machine learning server, with dual Intel Xeon Gold 6126 processors, 192 GB of RAM, and three SSDs totaling 1.1 TB of storage.",
+      "line": "baremetal",
+      "specs": {
+        "cpus": [
+          {
+            "count": 2,
+            "type": "Intel Xeon Gold 6126"
+          }
+        ],
+        "memory": {
+          "total": "192GB"
+        },
+        "drives": [
+          {
+            "count": 1,
+            "size": "150GB",
+            "type": "SSD"
+          },
+          {
+            "count": 2,
+            "size": "480GB",
+            "type": "SSD"
+          }
+        ],
+        "nics": [
+          {
+            "count": 2,
+            "type": "10Gbps"
+          }
+        ],
+        "features": {}
+      },
+      "legacy": true,
+      "deployment_types": [
+        "spot_market"
+      ],
+      "available_in": [
+        {
+          "id": "c9dcbd06-6797-4096-b648-1be16dd5d833",
+          "name": "Dallas, TX",
+          "code": "dfw2",
+          "features": [
+            "baremetal",
+            "storage",
+            "global_ipv4",
+            "backend_transfer",
+            "layer_2"
+          ],
+          "address": {
+            "href": "#273bf240-ca93-4ad8-82fa-1d9768098de1"
+          },
+          "ip_ranges": []
+        }
+      ],
+      "class": "g2.large.x86",
+      "pricing": {
+        "hour": 0
+      }
+    }
+  ]
+}
