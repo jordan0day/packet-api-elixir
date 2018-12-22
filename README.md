@@ -2,7 +2,7 @@
 
 An Elixir wrapper library for the [Packet](https://www.packet.com) HTTP API. It uses the [Tesla](https://hex.pm/packages/tesla) library under-the-covers for performing HTTP requests.
 
-*This library is a work in progress!* See the [changelog](changelog.md) to see the current state of the API.
+*This library is a work in progress!* See the [changelog](CHANGELOG.md) to see the current state of the API.
 
 ## Installation
 
