@@ -17,7 +17,7 @@ defmodule PacketApi.Plans do
   @spec list(request, includes) :: {:ok, [map]} | {:error, any}
   def list(%{client: client}, includes \\ []) do
     case Tesla.get(client, @base, query: includes) do
-      {:ok, %{status: 200, body: %{"plans" => plans}} = resp} ->
+      {:ok, %{status: 200, body: %{"plans" => plans}}} ->
         {:ok, plans}
 
       {:ok, %{status: status}} ->
@@ -36,7 +36,7 @@ defmodule PacketApi.Plans do
     path = "projects/#{project_id}/plans"
 
     case Tesla.get(client, path, query: includes) do
-      {:ok, %{status: 200, body: %{"plans" => plans}} = resp} ->
+      {:ok, %{status: 200, body: %{"plans" => plans}}} ->
         {:ok, plans}
 
       {:ok, %{status: status}} ->
